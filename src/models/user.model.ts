@@ -7,8 +7,8 @@ const UserSchema: Schema = new Schema<UserType>(
         name: { type: String, required: true },
         role: {
             type: String,
-            enum: ['admin', 'donor', 'volunteer'],
-            default: 'donor',
+            enum: ['admin', 'guide', 'user'],
+            default: 'user',
         }
     },
     {
